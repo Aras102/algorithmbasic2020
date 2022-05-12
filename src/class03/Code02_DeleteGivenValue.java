@@ -20,6 +20,7 @@ public class Code02_DeleteGivenValue {
 			}
 			head = head.next;
 		}
+		// 如果头结点为要删除的结点，就直接跳过，让头结点的下一个结点为头结点，返回
 		// 1 ) head == null
 		// 2 ) head != null
 		Node pre = head;
