@@ -2,6 +2,7 @@ package class04;
 
 public class Code02_SmallSum {
 
+	// 每个位置左边比它小的数都加起来的累加和
 	public static int smallSum(int[] arr) {
 		if (arr == null || arr.length < 2) {
 			return 0;
