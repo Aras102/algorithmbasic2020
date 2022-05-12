@@ -1,5 +1,6 @@
 package class10;
 
+// 找到相交的第一个节点
 public class Code01_FindFirstIntersectNode {
 
 	public static class Node {
