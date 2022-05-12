@@ -1,6 +1,6 @@
 package class03;
 
-// 数组实现栈和队列
+// 数组实现队列
 public class Code04_RingArray {
 
 	public static class MyQueue {
