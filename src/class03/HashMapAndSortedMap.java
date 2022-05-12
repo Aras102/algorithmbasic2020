@@ -113,7 +113,7 @@ public class HashMapAndSortedMap {
 		// treeMap.remove(4);
 		System.out.println(treeMap.get(4));
 
-		System.out.println("新鲜：");
+		System.out.println("新鲜：");//相比于哈希表新增的功能
 
 		System.out.println(treeMap.firstKey());
 		System.out.println(treeMap.lastKey());
