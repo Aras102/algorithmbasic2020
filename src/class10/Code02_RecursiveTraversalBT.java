@@ -12,6 +12,7 @@ public class Code02_RecursiveTraversalBT {
 		}
 	}
 
+	// 递归序，先序，中序，后续遍历是打印的位置的不同（对应的下面的1，2,3）
 	public static void f(Node head) {
 		if (head == null) {
 			return;
