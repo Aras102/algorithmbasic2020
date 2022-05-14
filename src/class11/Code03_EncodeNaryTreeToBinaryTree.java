@@ -43,7 +43,7 @@ public class Code03_EncodeNaryTreeToBinaryTree {
 				return null;
 			}
 			TreeNode head = new TreeNode(root.val);
-			head.left = en(root.children);
+			head.left = en(root.children);// 深度优先遍历
 			return head;
 		}
 
