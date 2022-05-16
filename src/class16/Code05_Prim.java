@@ -47,7 +47,7 @@ public class Code05_Prim {
 					}
 				}
 			}
-			// break;
+			// break;// 可能出现森林的话，就得加break, 如果图就是一个联通的，那可以加break
 		}
 		return result;
 	}
