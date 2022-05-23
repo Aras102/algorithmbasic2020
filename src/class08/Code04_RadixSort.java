@@ -45,11 +45,12 @@ public class Code04_RadixSort {
 				count[j]++;
 			}
 			for (i = 1; i < radix; i++) {
-				count[i] = count[i] + count[i - 1];
+				count[i] = count[i] + count[i - 1];// 累加和，表示count[i]位置，当前位上的数字小于等于i的个数
 			}
+			// 比较难懂位置
 			for (i = R; i >= L; i--) {
-				j = getDigit(arr[i], d);
-				help[count[j] - 1] = arr[i];
+				j = getDigit(arr[i], d);//  得到当前位的数字,由上一个循环得到的累加和，填help数组
+				help[count[j] - 1] = arr[i];// count[j]为小于j的数字的个数，当前位是数字j, 则当前数字最多填在count[j] - 1位置。
 				count[j]--;
 			}
 			for (i = L, j = 0; i <= R; i++, j++) {
