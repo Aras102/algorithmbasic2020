@@ -13,6 +13,7 @@ public class Code04_MaximalRectangle {
 		int[] height = new int[map[0].length];
 		for (int i = 0; i < map.length; i++) {
 			for (int j = 0; j < map[0].length; j++) {
+				// 的到压缩数组
 				height[j] = map[i][j] == '0' ? 0 : height[j] + 1;
 			}
 			maxArea = Math.max(maxRecFromBottom(height), maxArea);
