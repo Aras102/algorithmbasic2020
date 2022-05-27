@@ -23,7 +23,7 @@ public class Code03_LargestRectangleInHistogram {
 		while (!stack.isEmpty()) {
 			int j = stack.pop();
 			int k = stack.isEmpty() ? -1 : stack.peek();
-			int curArea = (height.length - k - 1) * height[j];
+			int curArea = (height.length - k - 1) * height[j];// 注意这里是height.length而不是j
 			maxArea = Math.max(maxArea, curArea);
 		}
 		return maxArea;
