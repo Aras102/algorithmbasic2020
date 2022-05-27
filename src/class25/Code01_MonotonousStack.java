@@ -14,6 +14,7 @@ public class Code01_MonotonousStack {
 	//     2 : [ 1, -1]
 	//     3 : [ 2, -1]
 	//  ]
+	// 数组保存两个位置分别为[左边比i小的位置，右边比i小的位置]
 	public static int[][] getNearLessNoRepeat(int[] arr) {
 		int[][] res = new int[arr.length][2];
 		// 只存位置！
